@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# MacOS
+.DS_Store
+
+# Virtual envs
+.venv/
+env/
+venv/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Local database / artifacts
+mcp_server/support.db
+
+# Secrets
+.env
+
