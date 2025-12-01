@@ -45,6 +45,12 @@ class AgentState(TypedDict, total=False):
     asked_history_once: bool
     step: int
     
+    # Loop prevention
+    completed_data_ops: List[str]  # Track completed data operations
+    support_negotiation_count: int  # Track Support's data requests
+    support_negotiated: bool  # Whether Support has negotiated once
+    scenario: str  # "task_allocation" | "negotiation" | "multi_step"
+    
     # Output
     response: str
     log: List[str]
